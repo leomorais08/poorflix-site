@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #222831;
+    color: black;
+}
+
+.cabecalho {
+    background-color: red;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.cabecalho__titulo {
+    /* zera padding/margin e permite controle do layout */
+}
+
+.titulo {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.cabecalho__topicos {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+
+.cabecalho__topicos__links {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+  }
+  
+  .foto__filmes {
+    width: 180px;
+    height: 200;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .foto__filmes:hover {
+    transform: scale(1.05);
+  }
+
+  .rodape {
+    color: black;
+    background-color: #393E46;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    font-weight: 400;
+}
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Coloca o título e os links em coluna no mobile */
+        height: auto; /* Remove altura fixa no mobile */
+        padding: 10px 20px; /* Reduz padding */
+        gap: 10px; /* Espaçamento entre título e links */
+    }
+
+    .titulo {
+        font-size: 24px; /* Reduz tamanho da fonte no celular */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .cabecalho__topicos {
+        justify-content: center; /* Centraliza os links */
+    }
+
+    .foto__filmes {
+        width: 140px; /* Reduz o tamanho das imagens */
+        height: 200px;
+    }
+
+    .galeria {
+        padding: 20px; /* Reduz padding da galeria */
+    }
+}
