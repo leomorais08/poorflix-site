@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Krona+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,600;1,600&display=swap');
 
 *{
     padding: 0%;
@@ -47,6 +47,28 @@ body {
     line-height: 1;
 }
 
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 200px;
+}
+
+.apresentacao__titulo {
+    color: aliceblue;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+.apresentacao__texto {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    gap: 100px;
+}
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -68,14 +90,17 @@ body {
   }
 
   .rodape {
+    position: fixed;
+    bottom: 0;
+    left: 0;
     color: black;
     background-color: #393E46;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     padding: 20px;
     font-weight: 400;
+    width: 100%;
 }
 
 
